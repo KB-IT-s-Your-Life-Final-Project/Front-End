@@ -9,6 +9,11 @@ const router = createRouter({
       name: 'home',
       component: HomePage,
     },
+    {
+      path: '/pwa-settings',
+      name: 'pwa-settings',
+      component: () => import('@/pages/PWASettingsPage.vue'),
+    },
     // ...authRoutes, 이런 느낌으로 각 도메인별로 라우터를 커스터 마이징 해주면 됩니다.
     //예: src/router/auth.js :
     // export default [
